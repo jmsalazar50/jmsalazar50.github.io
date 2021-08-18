@@ -1,0 +1,411 @@
+/* 
+Ballpark Style Sheet
+Filename styles.css
+Authors: Mona Teoba,
+23/02/2018
+*/
+
+/*Restet Styles*/
+a, article, body, dd, div, dl, dt, figcaption, figure, 
+footer, header, h1, h2, h3, img, li, nav, ol, p, sitenavigation, ul{
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+figcaption{
+	text-align:center;
+}
+  
+  
+  /* Header section*/
+ header{
+	
+		
+	padding: 0.5em;
+	text-align:center;
+	background-image: url("images/th.jpg");
+	border-bottom: 3px solid lightgray;
+	  
+ }
+ header figure{
+	 float:left;
+	 width:140px;
+	 box-shadow:-10px -5px 6px teal;
+	 position: relative;
+	 display:inline-block;
+	 margin-left: 10em;
+	 margin-right:-20em;
+	 z-index: 1
+	 
+ }
+header h1{
+	
+	
+}
+h1{
+	font-size: 3em;
+	font: bold;
+    line-height: 2em;
+    font-family:  'Berkshire Swash', cursive , Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+	text-align:center;
+}
+article h2{
+	font-size: 1.2em;
+	margin-top: 2px;
+}
+article h2 p{
+	font-size:1em;
+}
+
+article dt dd{
+	font-size:1em;
+	margin-bottom:none;
+}
+
+p{
+	text-align:left;
+	 font-family: 'Permanent Marker', cursive;
+	
+	
+}
+
+/*site navigation bar*/
+nav {
+	color: black;
+}
+nav.sitenavigation{
+	color: black;
+	font: bold;
+	margin: 0.2em;
+	display: inline-block;
+	font-size: 1.5em;
+	line-height: .8em;
+	background-color: none;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	
+		
+		}
+
+nav.sitenavigation li {
+		color: black;
+		background-color: none;
+		font-family: 'Permanent Marker', cursive;
+		font: bold;
+		display: inline-block;
+		
+		
+		
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: none;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: teal;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: purple;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+
+  /* body and page container */
+
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(teal,purple) no-repeat;
+}
+
+h4 {
+	padding:.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}	
+	
+	
+/*main content description list*/
+
+ div.container{
+	 padding: 3em;
+	 text-align:center;
+	 Font size:8x ;
+ }  
+
+div.container figure{
+	padding:2em;
+	height: 20em;
+	width: 20em;
+	float:left;
+
+	background-color:white;
+	position:relavent;
+}
+
+
+	
+article figure{
+	padding:15% ;
+}
+article a {
+	text-align: center;
+	
+}
+article dl{
+	margin-top: 2em;
+}
+
+article dd{
+	margin: 0.4em 0 1em;
+	font-size:1.4em;
+	text-align: center;
+}
+
+ article dt{
+	font-weight: bold;
+	font-size: 1.8em;
+	text-align: center;
+ }
+ 
+ dd .sponsor, dt .sponsor{
+	 font-weight: bold;
+	font-size: 1.8em;
+	 
+ }
+ h3{
+	 text-align: center;
+ }
+ /*main article unorfered list*/
+ 
+ 
+		
+
+
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+   /*border: 5px solid LightGray;*/
+   /*
+   border-left: 5px solid grey;
+   border-right: 5px solid grey;
+   */
+   background-color: white;
+   position: relative;
+}
+
+
+/* For Blank Trial Run  */
+
+
+
+
+.box {
+  width: 12%;
+  height: 12%;
+  background: none;
+  padding-left: .5%;
+  margin: auto;
+  display: inline-block;
+}
+
+.box:hover {
+/*	
+  background-color: green;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+ */ 
+
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(3);
+  
+  
+  
+}
+
+
+
+.underConstruction h1 {
+	text-align: center;
+	font-size: 150px;
+	color: black;
+	text-shadow: 1px 1px 2px orange, 0 0 25px orange, 0 0 5px orange;
+	
+}
+
+/* End of Trial Run */
+
+
+/* footer section */
+footer {
+   padding: 15px;
+   text-align: center;
+   color: black;
+   background-image: url("images/th.jpg");
+   margin: auto;
+
+   
+  
+}
+ 
+
+ 
+
+
+/* print styles */
+@media print and (max-width: 800px){
+   article, body, .container, footer, .underContruction h1{
+      width:auto;
+   }
+   article, body, .container, footer {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: #979A9A;
+   }
+   body, .container, .underContruction h1{
+      width: auto;
+   }
+   nav {
+      display: none;
+   }
+header{
+}
+@page {
+   margin: 0.75in;
+}
+}
+/* print styles */
+
+/*  Logo remove after a smaller size */
+@media screen and (max-width: 800px){ 
+article dl,article dt{
+	font-size: 80%;
+}
+article{
+	width:100%;
+	height:auto;
+}
+
+
+div#map{
+	width:60%
+}
+
+	header figure{
+		display: none; 
+		}  
+.underConstruction h1 {
+	text-align: center;
+	font-size: 300%;
+	color: black;
+	text-shadow: 1px 1px 2px orange, 0 0 25px orange, 0 0 5px orange;
+		height:auto;
+	width: 100%;
+}
+.container{
+	height:100%;
+	
+}
+div.container figure{
+	width:75%;
+	height: 60%;
+	
+}
+ body{
+      color: rgb(0,0,0);
+      background-color: #979A9A;
+	  padding:0;
+	  width:100%;
+	  height:auto;
+   }
+
+     nav {
+      display: none;
+   }
+
+h1{
+	font-size:2em;
+}
+@page {
+   margin: 0.75in;
+}
+}
+
+/*
+	.sitenavigation{
+		<img src="menu.png" width="63" height="57" alt="Show Navigation">
+	}
+	*?
+}
