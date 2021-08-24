@@ -5,11 +5,13 @@ body {
 	background: url('dark_geometric.png');
 }
 
+
 #container {
+	padding: .5em; 
 	width: auto;
-	overflow: hidden;
+	overflow: hidden ;
 	margin: 50px auto;
-	background: none;
+	background:#4ce600;
 }
 
  
@@ -17,14 +19,14 @@ body {
  
 
 .photobanner {
- height: 300px;
+ height: 325px;
  width: 3550px;
  margin-bottom: 80px;
 }
  
 .photobanner img {
 	height:400px;
-	width:3550px
+	width:425px;
  -webkit-transition: all 0.5s ease;
  -moz-transition: all 0.5s ease;
  -o-transition: all 0.5s ease;

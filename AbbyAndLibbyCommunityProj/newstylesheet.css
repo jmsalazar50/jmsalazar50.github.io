@@ -29,7 +29,7 @@ figcaption{
 		
 	padding: 0.5em;
 	text-align:center;
-	background-color:lightgray ;
+	background-image: url("images/th.jpg");
 	border-bottom: 3px solid lightgray;
 	  
  }
@@ -64,6 +64,7 @@ article h2{
 article h2 p{
 	font-size:1em;
 }
+
 article dt dd{
 	font-size:1em;
 	margin-bottom:none;
@@ -180,12 +181,45 @@ nav.sitenavigation li {
   /* body and page container */
 
 body {
+
 	font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(teal,purple) no-repeat;
+}
+
+h4 {
+	padding:.2em;
+	font-family: Arial, Helvetica, sans-serif;
 	
+}	
+	
+	
+/*main content description list*/
+
+ div.container{
+	 padding: 3em;
+	 text-align:center;
+	 Font size:8x ;
+ }  
+
+div.container figure{
+	padding:2em;
+	height: 20em;
+	width: 20em;
+	float:left;
+
+	background-color:white;
+	position:relavent;
+}
+
+
+	
+article figure{
+	padding:15% ;
+}
+article a {
+	text-align: center;
 	
 }
-/*main content description list*/
 article dl{
 	margin-top: 2em;
 }
@@ -206,6 +240,9 @@ article dd{
 	 font-weight: bold;
 	font-size: 1.8em;
 	 
+ }
+ h3{
+	 text-align: center;
  }
  /*main article unorfered list*/
  
@@ -259,33 +296,7 @@ article dd{
 }
 
 
-/* For Under Construction 
-.underConstruction img {
-   max-width: 100%;
-   height: auto;
-   width: auto;
-}
-.underConstruction h2{
-	font-size: 2.4em;
-   line-height: 1.6em;
-   font-weight: 400;
-   margin: 0 auto;
-   text-align: center;
-   }
-.underConstruction header{
-	  padding: 0.5em;
-	  text-align: center
-	  
- }
 
-.underConstruction body {
-		background-color: black;
-		background-image:url('images/airview.jpg');
-		background:url('images/airview.jpg');
-		
-		}	
-	
-	*/		
 .underConstruction h1 {
 	text-align: center;
 	font-size: 150px;
@@ -302,8 +313,9 @@ footer {
    padding: 15px;
    text-align: center;
    color: black;
-   background-color: Lightgray;
+   background-image: url("images/th.jpg");
    margin: auto;
+
    
   
 }
@@ -311,10 +323,11 @@ footer {
 
  
 
+
 /* print styles */
-@media print and (max-width: 400px){
+@media print and (max-width: 800px){
    article, body, .container, footer, .underContruction h1{
-      width: 100%;
+      width:auto;
    }
    article, body, .container, footer {
       border: 0;
@@ -322,31 +335,77 @@ footer {
       background-color: #979A9A;
    }
    body, .container, .underContruction h1{
-      max-width: 100%;
+      width: auto;
    }
    nav {
       display: none;
    }
-
+header{
+}
 @page {
    margin: 0.75in;
 }
 }
+/* print styles */
+
 /*  Logo remove after a smaller size */
-@media screen and (max-width: 400px){ 
+@media screen and (max-width: 800px){ 
+article dl,article dt{
+	font-size: 80%;
+}
+article{
+	width:100%;
+	height:auto;
+}
+
+
+div#map{
+	width:60%
+}
 
 	header figure{
 		display: none; 
 		}  
 .underConstruction h1 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 300%;
 	color: black;
 	text-shadow: 1px 1px 2px orange, 0 0 25px orange, 0 0 5px orange;
+		height:auto;
+	width: 100%;
 }
+.container{
+	height:100%;
+	
+}
+div.container figure{
+	width:75%;
+	height: 60%;
+	
+}
+ body{
+      color: rgb(0,0,0);
+      background-color: #979A9A;
+	  padding:0;
+	  width:100%;
+	  height:auto;
+   }
+
+     nav {
+      display: none;
+   }
+
+h1{
+	font-size:2em;
+}
+@page {
+   margin: 0.75in;
+}
+}
+
+/*
 	.sitenavigation{
 		<img src="menu.png" width="63" height="57" alt="Show Navigation">
 	}
-	
+	*?
 }
-
